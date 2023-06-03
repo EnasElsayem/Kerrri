@@ -1,0 +1,151 @@
+.navbar-nav .nav-link.active {
+    color: #e65f78;
+}
+.navbar-nav .nav-link {
+    color: black;
+}
+.navbar-nav .nav-link:hover {
+    color: #e65f78;
+}
+
+/* home section */
+
+.home {
+    background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url(../imges/header-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+/* .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+} */
+
+.home .home-content h1::after {
+    content: "";
+    animation: tyipng 2s infinite;
+}
+
+@keyframes tyipng {
+    0%{
+        content: "Ke|";
+    }
+    10%{
+        content: "Kerr|";
+    }
+    20%{
+        content: "Kerri D|";
+    }
+    30%{
+        content: "Kerri De.|";
+    }
+    40%{
+        content: "Kerri Deo.|";
+    }
+    50%{
+        content: "Kerri De.|";
+    }
+    60%{
+        content: "Kerri D.|";
+    }
+    70%{
+        content: "Kerri |";
+    }
+    80%{
+        content: "Ker|";
+    }
+    90%{
+        content: "K|";
+    }
+    100%{
+        content: "|";
+    }
+}
+
+.home .icons .spinner {
+    top: 30%;
+    left: 0%;
+    background-color: black;
+    padding: 10px 10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px ;
+}
+
+.home .icons .mouse {
+    /* background-color: #e65f78; */
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    animation: moving 1s infinite;
+}
+
+.home .icons .mouse::after {
+    content: "";
+    background-color: white;
+    width: 2px;
+    height: 7px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid white; */
+}
+
+@keyframes moving {
+   0%{
+    bottom: 5%;
+   }
+   50%{
+    bottom: 7%;
+   }
+   100%{
+    bottom: 5%;
+   }
+    
+}
+
+.home .icons .top {
+    background-color: #e65f78;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 7px;
+}
+
+/* about */
+
+.about .about-content h4 span {
+    color: #e65f78;
+}
+/* services */
+.services {
+    background-color: #f8f9fa;
+}
+.services .services-content {
+    border: 1px solid rgba(128, 128, 128, 0.222);
+}
+.services .services-content h3 {
+    position: relative;
+    margin: 10px 0px 30px;
+}
+.services .services-content h3::after {
+    content: "";
+    background-color: #e65f78;
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0px;
+    transition: all 1s ease-in-out;
+}
+.services .services-content:hover h3::after {
+    width: 30%;
+}
+
